@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(../images/pink.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  height: 70px;
+  background-color: rgba(126, 19, 64,0.5);
+  padding: 10px 0;
+}
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content  .brand {
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav  li a {
+  display: block;
+  color: #fff;
+  min-width: 80px;
+  /* background-color: blue; */
+  padding: 5px;
+  margin: 0px 5px;
+}
+
+/* **********************form***************************** */
+.section-form {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 45%;
+  text-align: center;
+  background-color:rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+.section-form  h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color:white;
+}
+.section-form  form input {
+  display: block;
+  width:100%;
+  margin: 5px 0;
+  height: 30px;
+  border: 1px  solid #ddd;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  outline: none;
+  border-radius: 10px;
+}
+
+.section-form form  input[type="submit"] {
+  font-size: 20px;
+  text-transform: uppercase;
+  height: auto;
+  cursor: pointer;
+  
+}
+.section-form form  input[type="submit"]:hover {
+  opacity: .5;
+}
+
+nav  ul#user_info {
+  display: none;
+}
+/* //////////////////////////////////////////////////////////// */
+.products {
+  display: grid;
+   grid-template-columns:repeat(3,30%);
+   gap: 3%;
+
+}
+.product_item {
+  /* border: 1px solid #ddd;
+  border-radius: 10px; */
+  min-height: 100px;
+  /* margin-bottom: 10px; */
+  /* color: rgb(238, 5, 5); */
+}
+.product_item:hover{
+  transform:scale(1.05,1.05);
+  transition: 0.5s;
+}
+.product_item_img {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(163, 84, 97);
+}
+.product_item_action  {
+  display: flex;
+  justify-content: space-between;
+}
+.product_item .add_to_cart {
+  display: block;
+  margin-right: auto;
+  background-color: rgb(117, 63, 72);
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product_item .fav {
+  cursor: pointer;
+  /* margin-bottom: -10px; */
+  /* width: 20px; */
+  font-size: 16px;
+  margin-left: auto;
+  color: rgb(88, 82, 82);
+
+}
+/* ////////////////////////////////////////////////////////////////////// */
+nav ul#user_info li p i{
+  margin-top: 15px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+nav ul#user_info li p{
+ display: flex;
+}
+nav ul#user_info li{
+  margin: 0px 10px;
+  position: relative;
+}
+nav ul#user_info li .badge {
+  width: 20px;
+  height: 20px; 
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px;
+  display: none;
+}
+/* /////////////////////////////////// */
+.carts_products {
+  position: absolute;
+  width:210px;
+  transform: translate(-40px,0);
+  background-color: #eaeaea;
+  top: 56px;
+  padding: 10px;
+  border: 1px solid rgb(129, 66, 121);
+  display: none;
+}
+.carts_products a {
+ display: block;
+ color: #000;
+ margin: 4px 0;
+ padding: 0;
+ background-color: rgb(100, 0, 87);
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+}
+
+/* //////////////////////////////////////////// search*/
+.searchBox{
+  display: flex;
+}
+.search{
+  margin-left: 5px;
+  width: 59%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+ border-radius: 10px;
+}
+.search input{
+ border: 0;
+ outline: 0;
+ box-shadow: 0;
+ width: 100%;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 20px;
+ padding: 10px;
+}
+.search i{
+  font-size: 20px;
+  margin-left: 3px;
+  cursor: pointer;
+
+}
+/* ///////////////////////////Order_info///////////////////////////// */
